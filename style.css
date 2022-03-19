@@ -6,11 +6,4 @@ body {
   width: 100px;
   height: 100px;
   background: orange;
-
-  transition-property: border-radius;
-  transition-duration: 4s;
-}
-
-.box:hover {
-  border-radius: 50%;
 }
