@@ -6,4 +6,11 @@ body {
   width: 100px;
   height: 100px;
   background: orange;
+
+  transition-property: transform, background;
+  transition-duration: 2s;
+}
+.box:hover {
+  transform: translateX(30px);
+  background: skyblue;
 }
