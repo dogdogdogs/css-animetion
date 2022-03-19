@@ -2,30 +2,23 @@ body {
   padding: 64px;
 }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background: orange;
+.loading {
+  width: 40px;
+  height: 40px;
+  border: 8px solid #ccc;
+  border-right-color: transparent;
+  border-radius: 50%;
 
-  animation-name: move;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 2;
+  animation: spin .8s infinite linear;
+  animation-name: spin;
 
 }
-/* .box:hover {
-  transform: translateX(120px);
-  background: skyblue;
-} */
 
-@keyframes move {
+@keyframes spin {
   0% {
     transform: none;
   }
-  80% {
-    transform: translateX(300px) rotate(340deg);
-  }
   100% {
-    transform: translateX(200px) rotate(140deg);
+    transform: rotate(360deg);
   }
 }
